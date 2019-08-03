@@ -3,7 +3,6 @@ FROM mariadb/server:10.3
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY . /usr/src/app
-COPY small.csv /var/lib/mysql/data.csv
 
 RUN apt-get update -y && apt-get install curl -y
 
